@@ -1,0 +1,53 @@
+===========================================
+Project Title: CLASSIFICATION OF CHRONIC KIDNEY DISEASE USING MACHINE LEARNING CLASSIFIERS
+===========================================
+
+Built With:
+- Python
+- Flask (Web Framework)
+- MySQL (Database)
+- HTML, CSS, JavaScript (Frontend)
+- scikit-learn, pandas, numpy (Machine Learning)
+- Pycharm
+
+-------------------------------------------
+Step-by-Step Setup Instructions
+-------------------------------------------
+
+1. Install Python (version 3.10 or above)  
+   https://www.python.org/downloads/
+
+2. Open a terminal/command prompt and navigate to the project folder:
+   cd path/to/SOURCE CODE/ChronicKidneyDisease
+
+3.  Install required Python libraries:
+   pip install -r requirements.txt
+
+4.  Set up MySQL Database:
+   - Open MySQL Workbench or any MySQL interface.
+   - Create a new database (e.g., kidney_db).
+   - Run the SQL scripts from the 'DATABASE CODE/Kidney.txt' to create tables and insert initial data.
+   - Make sure to update your `main.py` or `db.py` connection string with:
+     - host = "localhost"
+     - user = "your_mysql_username"
+     - password = "your_mysql_password"
+     - database = "kidney_db"
+
+5.  Run the Flask App:
+   python main.py
+
+6.  Open your browser and go to:
+   http://localhost:5000
+
+7. Use the GUI to test predictions.
+
+-------------------------------------------
+ Notes:
+- If using Pycharm, make sure you open the folder as a project.
+- Ensure MySQL service is running before launching the app.
+- For any missing package error, manually install using:
+   pip install package-name
+-------------------------------------------
+
+ Developed by: Manchala Ramesh
+ Month & Year of Passing: April 2025
