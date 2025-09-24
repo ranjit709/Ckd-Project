@@ -1,0 +1,132 @@
+{%include 'UserHead.html'%}
+<style>
+body {
+  background-image: url("https://images.unsplash.com/photo-1528460033278-a6ba57020470?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=375&q=80");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+</style>
+<div class="container-fluid">
+<div class="h3 text-center mt-3"> Predicting Chronic Kidney Disease There are Not :</div>
+<div class="container card ">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6 mt-3">
+<form action="PredictDisease1"    method="post">
+
+    <div class="form-group">
+        <label for="SpecificGravity">Choose Specific Gravity:</label>
+        <input type="text" class="form-control" id="SpecificGravity"  name="SpecificGravity"  placeholder="Min-1 and Max-1.025"  required>
+    </div>
+    <div class="form-group">
+        <label for="RedBlood">Choose Red Blood Cells:</label>
+        <select id="RedBlood" name="RedBlood" class="form-control" >
+        <option value="1">Abnormal</option>
+        <option value="0">Normal</option>
+        </select>
+    </div>
+    <div class="form-group">
+         <label for="CellClumps">Choose Pus Cell Clumps:</label>
+        <select id="CellClumps" name="CellClumps" class="form-control" >
+        <option value="1">Present</option>
+        <option value="0">Not Present</option>
+        </select>
+         </div>
+    <div class="form-group">
+         <label for="Bacteria">Choose Bacteria:</label>
+        <select id="Bacteria" name="Bacteria" class="form-control" >
+        <option value="1">Present</option>
+        <option value="0">Not Present</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="BloodGlucose">Blood Glucose Random:</label>
+        <input type="text" class="form-control" id="BloodGlucose"  name="BloodGlucose" placeholder="Max-490"   required>
+    </div>
+
+    <div class="form-group">
+        <label for="Haemoglobin">Choose Haemoglobin:</label>
+        <input type="text" class="form-control" id="Haemoglobin"  name="Haemoglobin" placeholder="Min-1 and Max-18"   required>
+
+    </div>
+
+    <div class="form-group">
+        <label for="PackedCell">Choose Packed Cell Volume:</label>
+        <input type="number" class="form-control" id="PackedCell"  name="PackedCell" placeholder="Min-14 and Max-55"  required>
+
+    </div>
+    <div class="form-group">
+        <label for="WhiteBlood">Choose White Blood Cell Count:</label>
+        <input type="number" class="form-control" id="WhiteBlood"  name="WhiteBlood" placeholder="Min-2,200 and Max-21000"   required>
+    </div>
+    <div class="form-group">
+        <label for="RedBloodCount">Choose Red Blood Cell Count:</label>
+        <input type="text" class="form-control" id="RedBloodCount"  name="RedBloodCount"  placeholder="Min-2 and Max-8"  required>
+    </div>
+    <div class="form-group">
+        <label for="Hypertension">Choose Hypertension:</label>
+        <select id="Hypertension" name="Hypertension" class="form-control" >
+       <option value="0">No</option>
+        <option value="1">Yes</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Mellitus">Choose Diabetes Mellitus:</label>
+        <select id="Mellitus" name="Mellitus" class="form-control" >
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="CoronaryArtery">Choose Coronary Artery Disease:</label>
+        <select id="CoronaryArtery" name="CoronaryArtery" class="form-control" >
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+        </select>
+    </div>
+     <div class="form-group">
+        <label for="Appetite">Choose Appetite :</label>
+         <select id="Appetite" name="Appetite" class="form-control" >
+        <option value="0">Poor</option>
+        <option value="1">Good</option>
+        </select>
+    </div>
+     <div class="form-group">
+        <label for="PedalEdema">Choose Pedal Edema:</label>
+        <select id="PedalEdema" name="PedalEdema" class="form-control" >
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+        </select>
+    <div class="form-group">
+        <label for="models">Choose Model:</label>
+        <select id="models" name="lmodels" class="form-control" >
+        <option value="DecisionTreeModel">Decision Tree</option>
+        <option value="RandomForestModel">Random Forest</option>
+        <option value="SvmModel">Svm Model</option>
+        <option value="knnModel">Knn Model</option>
+        </select>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="text-center p3 mb-3">
+<button type="submit" class="btn btn-primary " value="predict">PREDICT</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+

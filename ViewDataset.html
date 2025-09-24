@@ -1,0 +1,56 @@
+{%include 'AdminHead.html'%}
+<div class="container-fluid mt-2">
+    <div>
+        <table class="table-bordered table table-hover table-responsive">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Age</th>
+                <th>Bp</th>
+                <th>Specific Gravity</th>
+                <th>Albumin</th>
+                <th>Red Blood Cells</th>
+                <th>Pus Cell Clumps</th>
+                <th>Bacteria</th>
+                 <th>Blood Glucose Random</th>
+                <th>Haemoglobin</th>
+                <th>Packed Cell Volume</th>
+                <th>White Blood Cell Count</th>
+                <th>Red Blood Cell Count</th>
+                <th>Hypertension</th>
+                <th>Diabetes Mellitus</th>
+                <th>Coronary Artery Disease</th>
+                <th>Appetite</th>
+            </tr>
+            </thead>
+            <tbody>
+
+        {% for row in List:%}
+            <tr>
+                <td>{{row[0]}}</td>
+                 <td>{{row[1]}}</td>
+                 <td>{{row[2]}}</td>
+                 <td>{{row[3]}}</td>
+                 <td>{{row[4]}}</td>
+                 <td>{{row[7]}}</td>
+                 <td>{{row[9]}}</td>
+                 <td>{{row[10]}}</td>
+                <td>{{row[11]}}</td>
+                 <td>{{row[17]}}</td>
+                 <td>{{row[18]}}</td>
+                 <td>{{row[19]}}</td>
+                 <td>{{row[20]}}</td>
+                 <td>{{row[21]}}</td>
+                 <td>{{row[22]}}</td>
+                <td>{{row[23]}}</td>
+                 <td>{{row[24]}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+
+
+        </table>
+
+    </div>
+
+</div>
