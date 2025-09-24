@@ -1,0 +1,19 @@
+drop database kidney;
+
+create database kidney;
+
+use kidney;
+
+create table userreg
+(
+ user_id int(255) NOT NULL AUTO_INCREMENT primary key,
+ name varchar(255) not null ,
+ email varchar(255) not null unique,
+ phone varchar(255) not null unique,
+ password varchar(255) not null
+);
+
+
+
+
+
